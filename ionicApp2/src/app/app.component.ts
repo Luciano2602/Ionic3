@@ -14,7 +14,7 @@ export class MyApp {
   //@ViewChild(Nav) nav : Nav;
 
   //isso é igual a linha acima
-  @ViewChild('myNav') nav : Nav;
+  //@ViewChild('myNav') nav : Nav;
 
   rootPage:any = HomePage;
 
@@ -26,7 +26,7 @@ export class MyApp {
       splashScreen.hide();
 
       //nesse caso ele já inicializa a home, e logo em segui empilha o contactPage
-      this.nav.push(ContactPage);
+      //this.nav.push(ContactPage);
     });
   }
 }
