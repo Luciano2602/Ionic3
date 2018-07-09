@@ -18,6 +18,9 @@ export class HomePage {
     this.navCtrl.push(ContactPage);
   }
 
+  setRoot(): void{
+    this.navCtrl.setRoot(ContactPage);
+  }
 }
 
 

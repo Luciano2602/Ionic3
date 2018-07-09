@@ -1,13 +1,21 @@
-import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { Platform, Nav, NavController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { ContactPage } from '../pages/contact/contact';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
+
+  //ter acesso ao ion-nav que está no app.html
+  //@ViewChild(Nav) nav : Nav;
+
+  //isso é igual a linha acima
+  @ViewChild('myNav') nav : Nav;
+
   rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
@@ -16,6 +24,9 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+
+      //nesse caso ele já inicializa a home, e logo em segui empilha o contactPage
+      this.nav.push(ContactPage);
     });
   }
 }
