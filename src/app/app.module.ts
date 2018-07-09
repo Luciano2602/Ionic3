@@ -9,29 +9,32 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { MinhaPaginaPage } from '../pages/minha-pagina/minha-pagina';
 import { ListPage } from '../pages/list/list';
-
+import { AboutPage } from '../pages/about/about';
+import { HomePage } from '../pages/home/home';
+import { BoxComponent } from '../components/box/box';
 
 
 @NgModule({
-  declarations: [
+  declarations: [    
     MyApp,
     MinhaPaginaPage,
-    ListPage
+    ListPage,
+    AboutPage,
+    HomePage,
+    BoxComponent
+    
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp, {
-      //a linha a baixo é para o ionic fazer um pré loading do nosso código, ou seja
-      //ele continua usando o lazy load, porem apos carregar toda aplicação ele, faz o download dos pedaços 
-      //do código 
-      preloadModules: true 
-    }),
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     MinhaPaginaPage,
-    ListPage
+    ListPage,
+    AboutPage,
+    HomePage
   ],
   providers: [
     StatusBar,
