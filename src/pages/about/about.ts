@@ -18,8 +18,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   segment : 'custom-about/:id',
   //utiliza o historico do momento(só vai usar caso não tenha historico (tipo f5)
   //,a linha abaixo indica qual pagina é para carregar ao apertar na seta de voltar
-  defaultHistory : ['HomePage'],
-  priority: 'low'
+  defaultHistory : ['HomePage']
 })
 @Component({
   selector: 'page-about',

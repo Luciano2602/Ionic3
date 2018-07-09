@@ -3,7 +3,6 @@ import { NavController, IonicPage } from 'ionic-angular';
 
 //para chamar o home.module.ts na aplicação
 @IonicPage({
-  priority: 'high'
 })
 @Component({
   selector: 'page-home',

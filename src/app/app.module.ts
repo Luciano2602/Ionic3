@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { MinhaPaginaPage } from '../pages/minha-pagina/minha-pagina';
+import { ListPage } from '../pages/list/list';
 
 
 
 @NgModule({
   declarations: [
     MyApp,
-    MinhaPaginaPage
+    MinhaPaginaPage,
+    ListPage
   ],
   imports: [
     BrowserModule,
@@ -28,13 +30,13 @@ import { MinhaPaginaPage } from '../pages/minha-pagina/minha-pagina';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    MinhaPaginaPage
+    MinhaPaginaPage,
+    ListPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    //a linha abaixo retira da url o # ( ativa o html 5)
     {provide: LocationStrategy, useClass: PathLocationStrategy}
   ]
 })
