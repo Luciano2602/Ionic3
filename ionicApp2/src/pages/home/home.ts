@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 
 
 import { ContactPage } from '../contact/contact';
+import { LifecycleEventsPage } from '../lifecycle-events/lifecycle-events';
 
 @Component({
   selector: 'page-home',
@@ -30,6 +31,17 @@ export class HomePage {
     this.navCtrl.setRoot(ContactPage,{
       type: 'setRoot'
     });
+  }
+
+  lifecycle(): void{
+    this.navCtrl.push(LifecycleEventsPage)
+      //quando terminar de fazer o push da página
+      .then(() => {
+        console.log('Page pushd!');        
+      }).catch(error =>{
+          console.log('Acesso não autorizado!', error);               
+      });     
+    
   }
 }
 

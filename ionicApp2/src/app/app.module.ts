@@ -7,9 +7,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ContactPage } from '../pages/contact/contact';
+import { LifecycleEventsPage } from '../pages/lifecycle-events/lifecycle-events';
 
 @NgModule({
   declarations: [
+    LifecycleEventsPage,
     MyApp,
     HomePage,
     ContactPage
@@ -20,11 +22,12 @@ import { ContactPage } from '../pages/contact/contact';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
+    LifecycleEventsPage,
     MyApp,
     HomePage,
     ContactPage
   ],
-  providers: [
+  providers: [    
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
