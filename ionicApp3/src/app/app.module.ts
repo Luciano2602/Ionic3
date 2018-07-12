@@ -14,8 +14,8 @@ import { ConfigPage } from '../pages/config/config';
 
 @NgModule({
   declarations: [
-    MyApp,
     AboutPage,
+    MyApp,    
     ContactPage,
     ConfigPage,
     HomePage,
@@ -52,8 +52,8 @@ import { ConfigPage } from '../pages/config/config';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
     AboutPage,
+    MyApp,
     ContactPage,
     ConfigPage,
     HomePage,
