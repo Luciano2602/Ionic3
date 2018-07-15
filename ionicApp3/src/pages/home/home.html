@@ -1,5 +1,6 @@
 <ion-header>
-  <ion-navbar>
+  <!--A linha abaixo usa a paleta de cores que está em src-theme-variables ($collor) -->
+  <ion-navbar color="sabs">
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
@@ -17,7 +18,25 @@
 
   <button ion-button block (click)="onConfig()">Empilhar página config</button>
 
-  <button ion-button block (click)="onPushAbout()">Push About</button>
+  <button ion-button block (click)="onPushAbout()" color="danger">Push About</button>
 
-  <div class="box"></div>
+  <button ion-button block color="sabs">botão</button>
+  <button ion-button block >teste botao</button>
+
+  <!--utilities para personalizar textos-->
+  <div class="box" text-center text-uppercase>teste teste </div>
+
+  <!--<ion-list >-->
+  <ion-list>
+    <ion-item>item 1</ion-item>
+    <ion-item>item 2</ion-item>
+    <ion-item>item 3</ion-item>
+    <ion-item>item 4</ion-item>
+    <ion-item>item 5</ion-item>
+    <ion-item>item 6</ion-item>
+    <ion-item>item 7</ion-item>
+    <ion-item>item 8</ion-item>
+    <ion-item>item 9</ion-item>
+    <ion-item>item 10</ion-item>
+  </ion-list>
 </ion-content>

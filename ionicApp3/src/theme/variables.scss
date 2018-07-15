@@ -23,6 +23,10 @@ $app-direction: ltr;
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
 
+//para mudar todas as nav-bar do sistemas, ou seja sobreescrevendo o do ionic
+$toolbar-background: #f90;
+//vai alterar o fundo de todas as listas do sistema
+$list-background-color: #ccc;
 
 
 // Named Color Variables
@@ -38,7 +42,13 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  sabs:       (
+    // a linha abaixo deixa o "fundo" na cor que está a propriedade base, 
+    //e red o texto ou icone que está dentro da base que é a propriedade contrast
+    base: #453E6E,
+    contrast: red
+  )
 );
 
 
@@ -53,7 +63,7 @@ $colors: (
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
-
+$button-md-background-color : #000;
 
 
 // App Windows Variables

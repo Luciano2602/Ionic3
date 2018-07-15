@@ -16,9 +16,9 @@ export class MyApp {
     //this.config.set('ios');
 
     //colocando o menu no topo
-    this.config.set('tabsPlacement', 'top');
+    //this.config.set('tabsPlacement', 'top');
     //colocando icones do menu no left
-    this.config.set('tabsLayout', 'icon-left');
+    //this.config.set('tabsLayout', 'icon-left');
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.

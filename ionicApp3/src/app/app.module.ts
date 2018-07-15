@@ -24,7 +24,7 @@ import { ConfigPage } from '../pages/config/config';
   imports: [
     BrowserModule,
     //passando as configuracoes de modos
-    IonicModule.forRoot(MyApp,{
+    IonicModule.forRoot(MyApp) //,{
       //todas as plataformas vai ser do mesmo design( a mesma aparencia ios, android e wf)
 
       //andriod
@@ -34,21 +34,21 @@ import { ConfigPage } from '../pages/config/config';
       //mode: 'ios'
 
       //caso querira apenas uma plataforma igual a outra, ex : quero que o android tenha o design do ios
-      platforms:{
-        android:{
-          mode: 'ios'
-        },
-        ios:{
+     // platforms:{
+      //  android:{
+         // mode: 'ios'
+     //   },
+     //   ios:{
           //configuracao ios
-        },//a linha abaixo é windows Phone
-        windows:{
+      //  },//a linha abaixo é windows Phone
+      //  windows:{
           //colocando o menu do wf no rodapé
-          tabsPlacement: 'bottom'
-        }
-      }
+         // tabsPlacement: 'bottom'
+      //  }
+      //}
 
       
-    })
+    //})
   ],
   bootstrap: [IonicApp],
   entryComponents: [
